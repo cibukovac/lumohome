@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LumoHome Lite – Privacy Policy</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 24px;
+      color: #333;
+      line-height: 1.7;
+    }
+    h1 { color: #1a1a2e; font-size: 26px; }
+    h2 { color: #16213e; font-size: 18px; margin-top: 32px; }
+    p  { margin: 10px 0; }
+    ul { margin: 10px 0 10px 24px; }
+    li { margin-bottom: 6px; }
+    .date { color: #888; font-size: 14px; }
+    .highlight {
+      background: #f0f4ff;
+      border-left: 4px solid #4a6cf7;
+      padding: 12px 16px;
+      border-radius: 4px;
+      margin: 16px 0;
+    }
+    footer { margin-top: 60px; border-top: 1px solid #eee; padding-top: 20px; color: #888; font-size: 13px; }
+  </style>
+</head>
+<body>
+
+  <h1>Privacy Policy – LumoHome Lite</h1>
+  <p class="date">Last updated: March 9, 2026</p>
+
+  <div class="highlight">
+    <strong>Summary:</strong> LumoHome Lite does not collect, store, or share any personal data.
+    All settings are stored locally on your device only.
+  </div>
+
+  <h2>1. Introduction</h2>
+  <p>
+    LumoHome Lite ("the App") is a smart home controller application developed by Vladimir Cibukovac
+    ("we", "us", or "our"). This Privacy Policy explains how the App handles information when you
+    use it on your Android device.
+  </p>
+
+  <h2>2. Data We Do NOT Collect</h2>
+  <p>We do not collect, transmit, or store any of the following:</p>
+  <ul>
+    <li>Personal identification information (name, email, phone number)</li>
+    <li>Location data</li>
+    <li>Usage analytics or crash reports</li>
+    <li>Device identifiers</li>
+    <li>Any data through third-party analytics services (no Firebase, no Google Analytics)</li>
+  </ul>
+
+  <h2>3. Data Stored Locally on Your Device</h2>
+  <p>
+    The App stores the following information exclusively on your device using Android's
+    local storage (SharedPreferences and SQLite). This data never leaves your device:
+  </p>
+  <ul>
+    <li>MQTT broker connection settings (address, port, username, password)</li>
+    <li>Dashboard configuration and device settings</li>
+    <li>Automation rules and schedules</li>
+    <li>Sensor history data</li>
+    <li>App preferences (theme, language, display settings)</li>
+  </ul>
+
+  <h2>4. MQTT Communication</h2>
+  <p>
+    The App communicates directly with your MQTT broker (e.g., your local home server or a
+    cloud broker such as HiveMQ) to control your Tasmota and Zigbee devices. This communication
+    is established solely between your device and your broker — we have no access to this data,
+    nor do we operate any intermediate servers.
+  </p>
+  <p>
+    The security of this connection (including TLS/SSL encryption) depends on your broker
+    configuration. We recommend using TLS-encrypted connections and strong passwords.
+  </p>
+
+  <h2>5. Push Notifications</h2>
+  <p>
+    The App can receive push notifications sent directly from your Tasmota/Zigbee bridge
+    via the <strong>ntfy</strong> open-source notification service. These notifications are
+    configured and sent entirely by your own devices — we do not send, intercept, or have
+    access to any notification content.
+  </p>
+
+  <h2>6. Biometric Authentication</h2>
+  <p>
+    The App may request biometric authentication (fingerprint or face recognition) on supported
+    devices for securing access to certain features. Biometric data is processed entirely by
+    your device's operating system (Android BiometricPrompt API) and is never accessed,
+    stored, or transmitted by the App.
+  </p>
+
+  <h2>7. Internet Permission</h2>
+  <p>
+    The App requires internet access solely to connect to your MQTT broker. It does not
+    use internet access to contact any external servers operated by us.
+  </p>
+
+  <h2>8. Children's Privacy</h2>
+  <p>
+    This App is not directed at children under the age of 13. We do not knowingly collect
+    any information from children.
+  </p>
+
+  <h2>9. Changes to This Privacy Policy</h2>
+  <p>
+    We may update this Privacy Policy from time to time. Any changes will be reflected by
+    updating the "Last updated" date at the top of this page. We encourage you to review
+    this policy periodically.
+  </p>
+
+  <h2>10. Contact</h2>
+  <p>
+    If you have any questions about this Privacy Policy, please contact us at:<br>
+    <strong>lumohome2026@gmail.com</strong>
+  </p>
+
+  <footer>
+    © 2026 Vladimir Cibukovac · LumoHome Lite · All rights reserved
+  </footer>
+
+</body>
+</html>
